@@ -1,0 +1,386 @@
+.services-section {
+  border-bottom: 1px solid rgb(187, 187, 187);
+  margin: 0em 0.2em;
+}
+
+.services-heading {
+  margin: 3em 2em 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: orange;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.services-intro {
+  font-size: 1.5rem;
+  margin: 20px 1.3em 3em;
+}
+.services-intro span,
+.promo {
+  font-weight: 700;
+  color: orange;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.image-display {
+  display: flex;
+  padding: 0 2em 2em;
+}
+.image-display img,
+.text-container {
+  width: 70%;
+}
+.image-display img {
+  box-shadow: 0px 0px 10px 4px rgba(70, 131, 180, 0.2);
+}
+
+.text-display {
+  display: flex;
+  justify-content: end;
+  padding: 0 2em 5em;
+}
+.text-container {
+  padding: 1.5em 2em 1em;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: white;
+}
+.deco {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #dfb6b2;
+  margin: 0 0 1.5em 0;
+}
+.text-container p {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.pricing {
+  padding: 5px 25px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #dfb6b2;
+  display: block;
+  margin: 2em auto 0;
+  transition: all 0.7sec linear;
+}
+.pricing a {
+  text-decoration: none;
+  color: white;
+}
+.pricing:active {
+  zoom: 0.95;
+  box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-display-braiding {
+  width: 100%;
+  display: inline-block;
+}
+.image-display-braiding {
+  background-image: url(../images/20.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 4px rgba(82, 43, 91, 0.4);
+}
+
+.text-display-2 {
+  width: 100%;
+  display: inline-block;
+  padding: 0 0em 2em 2em;
+}
+.text-container-2 h3 {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+.text-container-2 li {
+  list-style-type: "✓";
+}
+
+.second-article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 2em 2em;
+}
+
+.deco-2,
+.booking-btn {
+  background-color: rgba(82, 43, 91, 0.8);
+}
+
+/*UPCOMING SERVICES SECTION*/
+.upcoming-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2em;
+  padding: 0 2em 2em;
+}
+.loading {
+  padding: 0 1em;
+  font-size: 2rem;
+  font-weight: 700;
+  color: orange;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-heading {
+  font-size: 1.5rem;
+}
+.service-card p {
+  width: 100%;
+}
+
+.card-body-1,
+.card-body-2,
+.card-body-3 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/30.JPG);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body-1::before,
+.card-body-2::before,
+.card-body-3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  content: "";
+}
+
+.card-body-2 {
+  background-image: url(../images/31.JPG);
+}
+.card-body-3 {
+  background-image: url(../images/32.JPG);
+}
+
+.loader {
+  opacity: 0.1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*LOADING SERVICES MEDIA QUERIES*/
+@media (max-width: 1000px) and (min-width: 900px) {
+  .image-display img,
+  .text-container {
+    width: 75%;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 799px) {
+  .second-article {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 80%;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 798px) and (min-width: 698px) {
+  .second-article {
+    grid-template-columns: 1fr 1.1fr;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 85%;
+  }
+
+  .upcoming-services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 280px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 697px) and (min-width: 597px) {
+  .second-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2em;
+    padding: 0 1em 2em;
+  }
+
+  .text-display-2 {
+    padding: 0em 0em 2em;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 85%;
+  }
+
+  .upcoming-services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 596px) and (min-width: 496px) {
+  .second-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2em;
+    padding: 0 1em 2em;
+  }
+
+  .text-display-2 {
+    padding: 0em 0em 2em;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 95%;
+  }
+
+  .upcoming-services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 495px) and (min-width: 460px) {
+  .second-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2em;
+    padding: 0 1em 2em;
+  }
+
+  .text-display-2 {
+    padding: 0em 0em 2em;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 95%;
+  }
+
+  .upcoming-services {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 390px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 459px) and (min-width: 200px) {
+  .second-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2em;
+    padding: 0 1em 2em;
+  }
+
+  .text-display-2 {
+    padding: 0em 0em 2em;
+  }
+
+  .image-display,
+  .text-display {
+    padding: 0 1em 2em;
+  }
+
+  .image-display img,
+  .text-container {
+    width: 100%;
+  }
+
+  .upcoming-services {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body-1,
+  .card-body-2,
+  .card-body-3 {
+    width: 100%;
+    height: 310px;
+  }
+
+  .service-card p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.privacy-policies {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+@media (min-width: 600px) {
+  .contain-all {
+    width: 70%;
+  }
+}
